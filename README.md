@@ -1,2 +1,2 @@
 # scoreMVAQ
-Score the Michigan Vision Anxiety Questionnaire
+Score the Michigan Vision-related Anxiety Questionnaire
