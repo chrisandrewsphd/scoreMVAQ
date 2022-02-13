@@ -19,7 +19,15 @@ Score the Michigan Vision-related Anxiety Questionnaire
 }
 \examples{
 justme <- read.table(
-  text = "Me,0,0,0,0,0,0,0,0,1,1,1,0,0,0,1",
+  text = "Me,0,0,0,0,0,0,0,0,1,1,1,0,0,1",
   sep = ",")
 scoreMVAQ(justme)
+
+justyou <- data.frame(ID="You", matrix(nrow=1, sample(0:3, 14, TRUE)))
+scoreMVAQ(justyou)
+
+names(justme) <- names(justyou) <- c("ID", sprintf("Q\%0.2d", seq(14)))
+justus <- rbind(justme, justyou)
+scoreMVAQ(justus, verbose = 1)
+
 }
