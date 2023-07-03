@@ -1,9 +1,9 @@
 #' Score the Michigan Vision-related Anxiety Questionnaire
 #'
 #' @param dat data.frame with N rows and 15 columns.  First column is patient ID and the remaining columns are responses to the 14 items.  Responses should be integers from 0 to 4.
-#' @param verbose A number indicating the amount of printing during function execution. 0 (default) is none. Higher numbers may result in more printing.
+#' @param verbose A number indicating the amount of printing to console during function execution. 0 (default) is none. Higher numbers may result in more printing.
 #'
-#' @return A list with two components, each an N by 2 matrix. The first, named thetas, contains the 2 domain scores for each patient.  The second, named ses, contains the standard errors of the thetas.
+#' @return A list with two components, each a data.frame with 3 variables: ID, ARF, and ACF. The first component, named thetas, contains the IDs (column 1 of of the input), and the 2 domain scores (ARF, ACF) for each patient.  The second, named ses, contains the IDs and the standard errors of the thetas.
 #' @export
 #'
 #' @examples
