@@ -1,0 +1,71 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# scoreMVAQ
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of scoreMVAQ is to convert the 14 responses from the Michigan Vision-related Anxiety Questionnaire (MVAQ) to two domain scores: Anxiety due to Rod Function (ARF) and Anxiety due to Cone Function (ACF)
+
+## Installation
+
+You can install the development version of scoreMVAQ from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("chrisandrewsphd/scoreMVAQ")
+```
+
+## Examples
+
+### Example 1
+
+This is a basic example which shows you how to score data from a single individual. `justme` is a data.frame with 15 variables and 1 row.  The 15 variables are the patient identifier followed by their 14 responses.
+
+```{r example2}
+library(scoreMVAQ)
+
+justme <- read.table(
+  text = "Me,0,0,0,0,0,0,0,0,1,1,1,0,0,1",
+  sep = ",")
+justme
+
+scoreMVAQ(justme)
+```
+
+### Example 2
+
+If you need to score many respondents (or the same respondent at several visits), you can include them all in a single data.frame and call `scoreMVAQ()`. The data.frame must have 15 columns still but can have more than 1 row.
+
+```{r example1}
+library(scoreMVAQ)
+
+justme <- read.table(
+  text = "Me,0,0,0,0,0,0,0,0,1,1,1,0,0,1",
+  sep = ",")
+justyou <- data.frame(ID="You", matrix(nrow=1, sample(0:3, 14, TRUE)))
+andyoutoo <- data.frame(ID="You 2", matrix(nrow=1, sample(0:3, 14, TRUE)))
+
+names(justme) <- names(justyou) <- names(andyoutoo) <- 
+  c("ID", sprintf("Q%0.2d", seq(14)))
+
+justus <- rbind(justme, justyou, andyoutoo)
+justus
+
+scoreMVAQ(justus, verbose = 1)
+```
+
+The option `verbose = 1` provides some messaging during the execution of `scoreMVAQ()`.
