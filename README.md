@@ -71,24 +71,24 @@ justus <- rbind(justme, justyou, andyoutoo)
 justus
 #>      ID Q01 Q02 Q03 Q04 Q05 Q06 Q07 Q08 Q09 Q10 Q11 Q12 Q13 Q14
 #> 1    Me   0   0   0   0   0   0   0   0   1   1   1   0   0   1
-#> 2   You   0   1   0   1   3   1   2   2   0   3   2   0   2   3
-#> 3 You 2   1   2   3   0   3   2   0   3   3   1   3   1   1   2
+#> 2   You   0   0   1   3   2   1   2   2   2   2   0   0   2   1
+#> 3 You 2   1   3   1   3   2   0   3   0   2   0   0   2   0   1
 
 scoreMVAQ(justus, verbose = 1)
 #> i =  1 
 #> i =  2 
 #> i =  3
 #> $thetas
-#>      ID        ARF        ACF
-#> 1    Me -0.1694411 -0.8727335
-#> 2   You  0.2389201  0.5564517
-#> 3 You 2  0.3898790  1.0787744
+#>      ID         ARF        ACF
+#> 1    Me -0.16944109 -0.8727335
+#> 2   You  0.22859445  0.9363263
+#> 3 You 2 -0.04037882  0.9850800
 #> 
 #> $ses
 #>      ID       ARF       ACF
 #> 1    Me 0.1146743 0.4943620
-#> 2   You 0.1741195 0.2907901
-#> 3 You 2 0.1581833 0.3232279
+#> 2   You 0.1437133 0.2803585
+#> 3 You 2 0.1589608 0.2844717
 ```
 
 The option `verbose = 1` provides some messaging during the execution of

@@ -35,7 +35,7 @@ devtools::install_github("chrisandrewsphd/scoreMVAQ")
 
 This is a basic example which shows you how to score data from a single individual. `justme` is a data.frame with 15 variables and 1 row.  The 15 variables are the patient identifier followed by their 14 responses.
 
-```{r example2}
+```{r example1}
 library(scoreMVAQ)
 
 justme <- read.table(
@@ -50,7 +50,7 @@ scoreMVAQ(justme)
 
 If you need to score many respondents (or the same respondent at several visits), you can include them all in a single data.frame and call `scoreMVAQ()`. The data.frame must have 15 columns still but can have more than 1 row.
 
-```{r example1}
+```{r example2}
 library(scoreMVAQ)
 
 justme <- read.table(
