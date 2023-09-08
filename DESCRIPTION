@@ -16,5 +16,9 @@ Depends:
 URL: https://github.com/chrisandrewsphd/scoreMVAQ, https://chrisandrewsphd.github.io/scoreMVAQ/
 BugReports: https://github.com/chrisandrewsphd/scoreMVAQ/issues
 Suggests: 
+    knitr,
+    kableExtra,
+    rmarkdown,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+VignetteBuilder: knitr

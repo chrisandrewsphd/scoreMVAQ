@@ -1,0 +1,12 @@
+PatID,VisitID,MVAQ01,MVAQ02,MVAQ03,MVAQ04,MVAQ05,MVAQ06,MVAQ07,MVAQ08,MVAQ09,MVAQ10,MVAQ11,MVAQ12,MVAQ13,MVAQ14
+Best,baseline,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+One,baseline,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Two,baseline,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+Worst,baseline,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+Miss,baseline,4,4,4,4,4,4,4,4,4,4,4,4,4,4
+Repeater,baseline,0,0,0,1,0,1,0,0,0,0,1,0,0,0
+Repeater,month3,0,0,0,1,0,1,0,0,0,0,1,0,0,1
+Repeater,month6,0,1,0,1,0,0,1,0,0,0,1,0,0,1
+Repeater,month9,2,2,1,1,0,1,0,0,0,0,1,0,0,1
+Han,baseline,0,1,0,1,1,1,1,0,2,0,1,0,0,0
+Solo,baseline,0,,0,0,0,0,1,0,1,1,0,0,0,0
