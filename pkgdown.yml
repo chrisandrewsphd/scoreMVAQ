@@ -1,9 +1,9 @@
-pandoc: 2.19.2
+pandoc: 3.1.11
 pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
   scoreMVAQ: scoreMVAQ.html
-last_built: 2023-09-08T18:06Z
+last_built: 2024-03-27T20:13Z
 urls:
   reference: https://chrisandrewsphd.github.io/scoreMVAQ/reference
   article: https://chrisandrewsphd.github.io/scoreMVAQ/articles

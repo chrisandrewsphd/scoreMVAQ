@@ -8,8 +8,8 @@
 <meta name="description" content="scoreMVAQ">
 <title>scoreMVAQ • scoreMVAQ</title>
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="../deps/bootstrap-5.2.2/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="scoreMVAQ">
 <meta property="og:description" content="scoreMVAQ">
@@ -26,7 +26,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">scoreMVAQ</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.1</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -130,24 +130,24 @@ obtain the most recent version of the package.</p>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; scMVAQ&gt; scoreMVAQ(justme)</span></span>
 <span><span class="co">#&gt; $thetas</span></span>
-<span><span class="co">#&gt;   ID        ARF        ACF</span></span>
-<span><span class="co">#&gt; 1 Me -0.1694411 -0.8727335</span></span>
+<span><span class="co">#&gt;   ID       ARF        ACF</span></span>
+<span><span class="co">#&gt; 1 Me -0.168155 -0.8727335</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $ses</span></span>
-<span><span class="co">#&gt;   ID       ARF      ACF</span></span>
-<span><span class="co">#&gt; 1 Me 0.1146743 0.494362</span></span>
+<span><span class="co">#&gt;   ID      ARF      ACF</span></span>
+<span><span class="co">#&gt; 1 Me 0.117081 0.494362</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; scMVAQ&gt; justyou &lt;- data.frame(ID="You", matrix(nrow=1, sample(0:3, 14, TRUE)))</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; scMVAQ&gt; scoreMVAQ(justyou)</span></span>
 <span><span class="co">#&gt; $thetas</span></span>
-<span><span class="co">#&gt;    ID       ARF       ACF</span></span>
-<span><span class="co">#&gt; 1 You 0.1418186 0.3481403</span></span>
+<span><span class="co">#&gt;    ID        ARF       ACF</span></span>
+<span><span class="co">#&gt; 1 You -0.1389884 0.7157201</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $ses</span></span>
 <span><span class="co">#&gt;    ID       ARF       ACF</span></span>
-<span><span class="co">#&gt; 1 You 0.1360266 0.2838339</span></span>
+<span><span class="co">#&gt; 1 You 0.1347863 0.2669017</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; scMVAQ&gt; names(justme) &lt;- names(justyou) &lt;- c("ID", sprintf("Q%0.2d", seq(14)))</span></span>
@@ -159,13 +159,13 @@ obtain the most recent version of the package.</p>
 <span><span class="co">#&gt; i =  2 </span></span>
 <span><span class="co">#&gt; $thetas</span></span>
 <span><span class="co">#&gt;    ID        ARF        ACF</span></span>
-<span><span class="co">#&gt; 1  Me -0.1694411 -0.8727335</span></span>
-<span><span class="co">#&gt; 2 You  0.1418186  0.3481403</span></span>
+<span><span class="co">#&gt; 1  Me -0.1681550 -0.8727335</span></span>
+<span><span class="co">#&gt; 2 You -0.1389884  0.7157201</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $ses</span></span>
 <span><span class="co">#&gt;    ID       ARF       ACF</span></span>
-<span><span class="co">#&gt; 1  Me 0.1146743 0.4943620</span></span>
-<span><span class="co">#&gt; 2 You 0.1360266 0.2838339</span></span></code></pre></div>
+<span><span class="co">#&gt; 1  Me 0.1170810 0.4943620</span></span>
+<span><span class="co">#&gt; 2 You 0.1347863 0.2669017</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="a-typical-use-case">A Typical Use Case<a class="anchor" aria-label="anchor" href="#a-typical-use-case"></a>
@@ -267,11 +267,11 @@ Each data.frame has the same number of rows as the input.</p>
 <span><span class="co">#&gt; List of 2</span></span>
 <span><span class="co">#&gt;  $ thetas:'data.frame':  11 obs. of  3 variables:</span></span>
 <span><span class="co">#&gt;   ..$ ID : chr [1:11] "Best|baseline" "One|baseline" "Two|baseline" "Worst|baseline" ...</span></span>
-<span><span class="co">#&gt;   ..$ ARF: num [1:11] -1.19709 -0.00296 0.44207 1.63048 NA ...</span></span>
+<span><span class="co">#&gt;   ..$ ARF: num [1:11] -1.19713 -0.00306 0.44315 1.63047 NA ...</span></span>
 <span><span class="co">#&gt;   ..$ ACF: num [1:11] -1.327 0.593 1.275 2.623 NA ...</span></span>
 <span><span class="co">#&gt;  $ ses   :'data.frame':  11 obs. of  3 variables:</span></span>
 <span><span class="co">#&gt;   ..$ ID : chr [1:11] "Best|baseline" "One|baseline" "Two|baseline" "Worst|baseline" ...</span></span>
-<span><span class="co">#&gt;   ..$ ARF: num [1:11] 0.535 0.111 0.109 0.486 NA ...</span></span>
+<span><span class="co">#&gt;   ..$ ARF: num [1:11] 0.535 0.113 0.11 0.486 NA ...</span></span>
 <span><span class="co">#&gt;   ..$ ACF: num [1:11] 0.614 0.242 0.227 0.475 NA ...</span></span>
 <span></span>
 <span><span class="va">MVAQthetas</span> <span class="op">&lt;-</span> <span class="va">MVAQlist</span><span class="op">[[</span><span class="st">"thetas"</span><span class="op">]</span><span class="op">]</span> <span class="co"># domain estimates</span></span>
@@ -298,17 +298,17 @@ written to an external file, used to create summary data, plotted, …</p>
 <span><span class="co">#&gt; 10      Han baseline      0      1      0      1      1      1      1      0</span></span>
 <span><span class="co">#&gt; 11     Solo baseline      0     NA      0      0      0      0      1      0</span></span>
 <span><span class="co">#&gt;    MVAQ09 MVAQ10 MVAQ11 MVAQ12 MVAQ13 MVAQ14          ARF         ACF</span></span>
-<span><span class="co">#&gt; 1       0      0      0      0      0      0 -1.197091367 -1.32692105</span></span>
-<span><span class="co">#&gt; 2       1      1      1      1      1      1 -0.002964849  0.59326736</span></span>
-<span><span class="co">#&gt; 3       2      2      2      2      2      2  0.442071740  1.27527715</span></span>
-<span><span class="co">#&gt; 4       3      3      3      3      3      3  1.630478712  2.62299486</span></span>
+<span><span class="co">#&gt; 1       0      0      0      0      0      0 -1.197130771 -1.32692104</span></span>
+<span><span class="co">#&gt; 2       1      1      1      1      1      1 -0.003059503  0.59326736</span></span>
+<span><span class="co">#&gt; 3       2      2      2      2      2      2  0.443153756  1.27527715</span></span>
+<span><span class="co">#&gt; 4       3      3      3      3      3      3  1.630465525  2.62299468</span></span>
 <span><span class="co">#&gt; 5       4      4      4      4      4      4           NA          NA</span></span>
-<span><span class="co">#&gt; 6       0      0      1      0      0      0 -0.509698654 -0.20997665</span></span>
-<span><span class="co">#&gt; 7       0      0      1      0      0      1 -0.509698654 -0.06599024</span></span>
-<span><span class="co">#&gt; 8       0      0      1      0      0      1 -0.418444246 -0.10339904</span></span>
-<span><span class="co">#&gt; 9       0      0      1      0      0      1 -0.509698654  0.50977036</span></span>
-<span><span class="co">#&gt; 10      2      0      1      0      0      0 -0.206429988  0.09479660</span></span>
-<span><span class="co">#&gt; 11      1      1      0      0      0      0 -0.214407741 -1.16805918</span></span>
+<span><span class="co">#&gt; 6       0      0      1      0      0      0 -0.509326217 -0.20997665</span></span>
+<span><span class="co">#&gt; 7       0      0      1      0      0      1 -0.509326217 -0.06599023</span></span>
+<span><span class="co">#&gt; 8       0      0      1      0      0      1 -0.417189669 -0.10339904</span></span>
+<span><span class="co">#&gt; 9       0      0      1      0      0      1 -0.509326217  0.50977036</span></span>
+<span><span class="co">#&gt; 10      2      0      1      0      0      0 -0.207031906  0.09479659</span></span>
+<span><span class="co">#&gt; 11      1      1      0      0      0      0 -0.215690843 -1.16805918</span></span>
 <span></span>
 <span><span class="co"># save(</span></span>
 <span><span class="co">#   MVAQlist, dat_for_MVAQ, patientthetas,</span></span>
