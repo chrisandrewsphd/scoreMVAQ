@@ -1,6 +1,6 @@
 Package: scoreMVAQ
 Title: Score the Michigan Vision-related Anxiety Questionnaire
-Version: 1.1
+Version: 1.1.48
 Authors@R: 
     person("Chris", "Andrews", , "chrisaa@umich.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-5130-6374"))
@@ -8,11 +8,11 @@ Description: Package has one function, scoreMVAQ(), which takes a data.frame of 
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
+Config/roxygen2/version: 8.1.1
 Imports: 
     mirt
 Depends: 
-    R (>= 2.10)
+    R (>= 3.5)
 URL: https://github.com/chrisandrewsphd/scoreMVAQ, https://chrisandrewsphd.github.io/scoreMVAQ/
 BugReports: https://github.com/chrisandrewsphd/scoreMVAQ/issues
 Suggests: 
